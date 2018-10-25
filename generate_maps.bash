@@ -1,0 +1,1 @@
+for i in 27 28 29 30 31 32 33 34 35 36 37 38; do s1="data/full_sets/full.2018-W${i}.set"; s2="data/full_sets/full.2018-W$[ ${i} +1 ].set"; echo ${s1} ${s2} ; python ./calculate_weekly_map.py 24 ${s1} ${s2} > data/maps/volatility.2018-$[ ${i} +1 ].csv; done
